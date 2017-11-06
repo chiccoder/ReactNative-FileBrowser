@@ -1,7 +1,10 @@
-const filePath = (state = 'SHOW_ALL', action) => {
+import RNFS from 'react-native-fs';
+
+
+const filePath = (state = RNFS.ExternalStorageDirectoryPath, action) => {
     switch (action.type) {
-      case 'SET_VISIBILITY_FILTER':
-        return action.filter
+      case 'SET_FILES':
+        return action.payload.filePath
       default:
         return state
     }

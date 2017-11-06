@@ -1,13 +1,8 @@
 
-// import { combineReducers } from 'redux'
 import filePath from './filePath'
+import fileList from './fileList'
 
 export {
-  filePath
+  filePath,
+  fileList
 };
-
-// const fileBrowser = combineReducers({
-//   filePath,
-// })
-
-// export default fileBrowser

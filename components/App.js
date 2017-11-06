@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { createStore, combineReducers } from 'redux';
-import FileBrowser from './FileBrowser'
+import FileList from './FileList'
 import * as reducers from '../reducers';
 import { Provider } from 'react-redux';
 
@@ -12,7 +12,7 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <FileBrowser />
+        <FileList />
       </Provider>
     );
   }
